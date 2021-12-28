@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import TinderCard from "react-tinder-card";
+import "./TinderCards.css";
+function TinderCards() {
   const [people, setPeople] = useState([
     {
       name: "Mary Kom",
