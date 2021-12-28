@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
+import database from "./firebase";
 import "./TinderCards.css";
 function TinderCards() {
   const [people, setPeople] = useState([]);
@@ -30,6 +31,7 @@ function TinderCards() {
               <h3>{person.name}</h3>
             </div>
           </TinderCard>
+          
         ))}
       </div>
     </div>
