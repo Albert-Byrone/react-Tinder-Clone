@@ -1,11 +1,8 @@
-// Import the functions you need from the SDKs you need
-// import firebase from "firebase";
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyA2NGqjWXIBLbi-rRd3T2cayMHDgz2gWdY",
   authDomain: "tinder-clone-fa435.firebaseapp.com",
@@ -16,8 +13,7 @@ const firebaseConfig = {
   measurementId: "G-82H22JL0VD",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = app.firestore();
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const database = firebaseApp.firestore();
 
 export default database;
