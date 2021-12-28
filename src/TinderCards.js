@@ -12,3 +12,26 @@
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Maria_Sharapova_Australian_Open_Players%27_Party_2015.jpg/800px-Maria_Sharapova_Australian_Open_Players%27_Party_2015.jpg",
     },
   ]);
+  return (
+    <div>
+      <div className="tinderCards__cardContainer">
+        {people.map((person) => (
+          <TinderCard
+            className="swipe"
+            key={person.name}
+            preventSwipe={["up", "down"]}
+          >
+            <div
+              style={{ backgroundImage: `url(${person.url})` }}
+              className="card"
+            >
+              <h3>{person.name}</h3>
+            </div>
+          </TinderCard>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default TinderCards;
