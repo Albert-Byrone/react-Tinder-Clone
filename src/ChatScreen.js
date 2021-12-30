@@ -1,3 +1,20 @@
+  const [message, setMessage] = useState([
+    {
+      name: "Albert Byrone",
+      message: "Good morning to you ",
+      image:
+        "https://www.worldatlas.com/r/w1200/upload/8b/da/5f/shutterstock-1098962144.jpg",
+    },
+    {
+      name: "Sammy",
+      message: "Hi how are you",
+      image:
+        "https://www.worldatlas.com/r/w1200/upload/8b/da/5f/shutterstock-1098962144.jpg",
+    },
+    {
+      message: "Hi, I am fine thank you.How are you",
+    },
+  ]);
   const handleSend = (e) => {
     e.preventDefault();
     setMessage([...message, { message: input }]);
