@@ -17,11 +17,13 @@ This a tinder clone web app build using react.
 - **React-Router-v6 https://reactrouter.com/docs/en/v6/getting-started/overview**
 - **React-Tinder-Cards https://www.npmjs.com/package/react-tinder-card**
 
-## Support
+## Contact
 
 Albert Byrone
 
-[Slack Albert Byrone](https://slack.com/intl/en-ke/) @Albert-Byrone
+[Email ](albertbyrone1677@gmail.com)alberbyrone1677@gmail.com
+
+[Telephone ](+254700298415) +254700298415
 
 ### License
 
