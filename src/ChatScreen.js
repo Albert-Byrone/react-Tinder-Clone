@@ -1,3 +1,8 @@
+  const handleSend = (e) => {
+    e.preventDefault();
+    setMessage([...message, { message: input }]);
+    setInput(""); 
+  };
           <div className="chatScreen__message">
             <Avatar
               className="chatScreen__image"
