@@ -6,3 +6,8 @@
             />
             <p className="chatScreen__text">{message.message}</p>
           </div>
+        ) : (
+          <div className="chatScreen__message">
+            <p className="chatScreen__textUser">{message.message}</p>
+          </div>
+        )
